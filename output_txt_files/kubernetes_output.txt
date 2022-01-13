@@ -1,0 +1,19 @@
+Docker ID and Image: namit11/devopsproj
+NAME        READY   STATUS    RESTARTS   AGE
+devopsproj   1/1     Running   0          5m13s
+PS C:\Users\Namit\devopsproj> kubectl port-forward pods/devopsproj 8080:80
+Forwarding from 127.0.0.1:8080 -> 80
+Forwarding from [::1]:8080 -> 80
+Handling connection for 8080
+
+
+------------
+PS C:\Users\Namit\devopsproj> ./make_prediction.sh
+Port: 8080
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   246  100    48  100   198    432   1783 --:--:-- --:--:-- --:--:--  2216{
+  "prediction": [
+    20.35373177134412
+  ]
+}
