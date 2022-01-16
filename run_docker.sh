@@ -5,7 +5,7 @@
 
 # Step 1:
 # Build image and add a descriptive tag
-docker build -t devopsproj .
+docker build -t DevOpsProject .
 
 
 
@@ -16,4 +16,4 @@ docker image ls
 
 # Step 3: 
 # Run flask app
-docker run -p 8080:80 devopsproj
+docker run -p 8080:80 DevOpsProject
